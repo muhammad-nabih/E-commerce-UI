@@ -1,0 +1,80 @@
+.landing {
+    height: calc(100vh - 81px);
+    position: relative;
+}
+
+
+.clip {
+    background-image: url('/net.avif');
+    background-color: #00000052;
+    background-blend-mode: overlay;
+}
+
+
+
+
+
+.box {
+    direction: rtl;
+    color: white;
+    text-align: center;
+    width: 92%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 2;
+    color: #33ade3;
+}
+
+.desc {
+    font-size: 1.2rem;
+    color: #f9dddd;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 1.5rem;
+        line-height: 1.8;
+
+    }
+
+    .desc {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.3rem;
+        line-height: 1.8;
+
+    }
+
+    .desc {
+        font-size: .8rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    .title {
+        font-size: 1rem;
+        line-height: 1.6;
+
+    }
+
+    .desc {
+        font-size: .6rem;
+        margin-top: 10px;
+    }
+}

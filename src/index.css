@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  direction: rtl;
+  font-family: 'Alexandria', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* تخصيص الشريط العمودي */
+::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* تخصيص الشريط الأفقي */
+::-webkit-scrollbar-thumb {
+  background-color: #1a56db;
+  /* لون الخلفية للشريط */
+  border-radius: 6px;
+  /* تدوير الزوايا */
+}
+
+/* تخصيص الشريط العمودي عند التحويم عليه */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0d3a94;
+  /* تغيير لون الخلفية عند التحويم */
+}
+
+/* تخصيص الشريط العمودي عند النقر عليه */
+::-webkit-scrollbar-thumb:active {
+  background-color: #06235b;
+  /* تغيير لون الخلفية عند النقر */
+}

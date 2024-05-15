@@ -1,0 +1,8 @@
+div.flex.h-full.snap-mandatory.overflow-y-hidden {
+    border-radius: 0;
+
+}
+
+div.relative.h-full.w-full>div {
+    direction: ltr !important;
+}
