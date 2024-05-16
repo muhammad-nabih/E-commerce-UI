@@ -25,7 +25,7 @@ const ProductDetails = ({ product, onClose }) => {
         </button>
         <div className="flex items-center justify-center mb-4">
           <img
-            src={`${urlImage}${product.attributes.image.data.attributes.url}`}
+            src={product.attributes.image.data.attributes.url}
             alt={product.title}
             className="w-68 h-48 object-cover rounded-lg p-4"
           />

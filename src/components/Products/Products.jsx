@@ -1,4 +1,4 @@
-import  { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { useFetch } from "../../hooks/useFetch/useFetch";
 import { Button } from "flowbite-react";
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ import { useDispatch } from "react-redux";
 import ProductDetails from "../ProductDetails/ProductDetails";
 
 const Products = () => {
-const urlImage=  import.meta.env.VITE_APP_URL;
+
   const { filter } = useContext(storeContext);
   const { data, loading } = useFetch(filter);
   const [products, setProducts] = useState(data || []);
@@ -38,7 +38,7 @@ const urlImage=  import.meta.env.VITE_APP_URL;
           <div
             className={styles.image}
             style={{
-              backgroundImage: `url(${urlImage}${product.attributes.image.data.attributes.url})`,
+              backgroundImage: `url(${product.attributes.image.data.attributes.url})`,
             }}
           ></div>
         </div>
@@ -66,8 +66,7 @@ const urlImage=  import.meta.env.VITE_APP_URL;
                     title: product.attributes.title,
                     desc: product.attributes.desc,
                     price: product.attributes.price,
-                    image:
-                      urlImage + product.attributes.image.data.attributes.url,
+                    image: product.attributes.image.data.attributes.url,
                   })
                 )
               }
